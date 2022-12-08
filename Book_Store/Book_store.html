@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is Our Book ">
+    <title>Wasim Book Store</title>
+    <style>
+        ul{
+          list-style-type: none;
+          text-align: center;
+          font-size: 20px;
+        }
+        li{
+          display:inline-block
+
+        }
+          #table_info{
+              text-align: center;
+              font-size: 20px;
+              border-spacing: 30px;
+              text-transform: capitalize;
+          }
+          input{
+              font-size: 20px;
+          }
+
+          footer{
+            width: initial;
+            height: 200px;
+            background-color: black;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+          }
+          .li_edit{
+            margin: 5px;
+          }
+          #img_logo{
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            border-radius: 50%;
+          }
+          #header_h2{
+            position: absolute;
+            margin-left: 80px;
+          }
+          
+      </style>
+</head>
+<body>
+    <header>
+        <img id="img_logo" src="logo.jpg" alt="">
+        <h2 id="header_h2">Book Shpo online</h2>
+       
+        <ul class="header_ul">
+            <li class="li_edit"><a href="#"> Home </a></li>
+            <li class="li_edit"><a href="#"> About </a></li>
+            <li class="li_edit"><a href="#"> Serveses </a></li>
+            <li class="li_edit"><a href="#"> Contect </a></li>
+        </ul>
+        
+        </header>
+        <hr>
+        <div class="book_contner">
+            <form method="get">
+            <table id ="table_info" >
+                <caption>View Book</caption>
+                    <tbody >
+                        <tr>
+                            <td>
+                                <label for="bk1">
+                                <figure >
+                                <img src="book1.jpeg" alt="">
+                                <figcaption>name of book</figcaption>
+                                </figure>
+                                </label>
+                            </td>
+                            <td ><label for="bk1">10$</label></td>
+                            <td><label for="bk1"> data about book</label></td>
+                             <td><label > Nb_copy</label>
+                                <input list="bk1_nb" name="bk1_nb">
+                                <datalist id="bk1_nb">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                            </td>
+                            <td><input  id="bk1"type="checkbox" name="buy" value="book1"></input></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="bk2">
+                                 <figure>
+                                <img src="book2.jpeg" alt="">
+                                <figcaption>name of book</figcaption>
+                                </figure>
+                                </label>
+                            </td>
+                            <td ><label for="bk2">20$</label></td>
+                            <td><label for="bk2"> data about book</label></td>
+                            <td><label > Nb_copy</label>
+                                <input list="bk2_nb" name="bk2_nb">
+                                <datalist id="bk2_nb">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                            
+                            
+                            
+                            </td>
+                            <td><input id="bk2" type="checkbox" name="buy" value="book2"></input></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="bk3">
+                                <figure>
+                                <img src="book3.jpeg" alt="">
+                                <figcaption>name of book</figcaption>
+                            </figure>
+                            </label>    
+                            </td>
+                            <td ><label for="bk3">30$</label></td>
+                            <td><label for="bk3"> data about book</label></td>
+                            <td><label > Nb_copy</label>
+                                <input list="bk3_nb" name="bk3_nb">
+                                <datalist id="bk3_nb">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                            </td>
+                            <td><input id="bk3" type="checkbox" name="buy" value="book3"></input></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="bk4">
+                                <figure>
+                                <img src="book4.jpeg" alt="">
+                                <figcaption>name of book</figcaption>
+                                </figure>
+                                </label> 
+                            </td>
+                            <td ><label for="bk4">50$</label></td>
+                            <td><label for="bk4"> data about book</label></td>
+                            <td><label > Nb_copy</label>
+                                <input list="bk4_nb" name="bk4_nb">
+                                <datalist id="bk4_nb">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                            </td>
+                            <td><input id="bk4" type="checkbox" name="buy" value="book4"></input></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"> <label>Submit</label>
+                                <input type="submit" value="Save">
+                            </td>
+                            <td > <label>Reset</label>
+                                <input type="reset" value="Reset" >
+                            </td>
+                        </tr>
+                    </tfoot>
+                   
+        
+                </table>
+            </form>
+          
+        </div>      
+
+
+        <sidebar class="sidebar">
+              <video controls  poster="logo.jpg" width="50%" height="50%" >
+                <source src="bookvideo.mp4" type="video/mp4">
+               </video> 
+               <audio controls autoplay loop muted>
+                <source src="bookaudio.mp3" type="audio/mpeg">
+                Your brooweser didn't support this type of music
+            </audio>
+        </sidebar>
+        <footer class="footer">
+            <h2 class="footer_world">Welcom to our page</h2>
+            <h5 class="footer_world">info about pager info about pager info about pager info about pager info about pager info about pager info about pager </h5>
+            <ol>
+                <li class="li_edit">Fascbook</li>
+                <li class="li_edit">Twitter</li>
+                <li class="li_edit">Instgram</li>
+                <li class="li_edit">YouTube</li>
+                <li class="li_edit">Linkedln</li>
+            </ol>
+            <h4>WasimTest@gmail.com</h4>
+        </footer>    
+
+</body>
+</html>
